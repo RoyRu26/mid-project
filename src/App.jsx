@@ -25,6 +25,7 @@ function App() {
       <NavBar/>
       <Routes>
         {/* <Route path='/' element={<HomePage/>}/> */}
+        <HomePage/>
       </Routes>
     </ThemeProvider>
   );
