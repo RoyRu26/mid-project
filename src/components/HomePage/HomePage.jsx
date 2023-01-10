@@ -9,11 +9,8 @@ function HomePage() {
             </video>
             {/* <button className='GetStartedBtn'>Get Started</button> */}
             </div>
-
             <div className='ScrollingImgs'>
-
             </div>
-            
         </div>
     );
 }
