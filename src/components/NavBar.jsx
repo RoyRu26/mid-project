@@ -18,7 +18,7 @@ function NavBar() {
             <AppBar position='fixed' sx={{ marginBottom: '30px', zIndex: '1' }}>
                 <StyledToolBar>
                     <IconButton size='large' edge='start' color='secondary' onClick={() => setIsDrawerOpen(true)}><MenuIcon /></IconButton>
-                    <NavLink style={{textDecoration:'none'}} to=''><Typography fontWeight='medium' color='secondary'>About</Typography></NavLink>
+                    <NavLink style={{textDecoration:'none'}} to='/About'><Typography fontWeight='medium' color='secondary'>About</Typography></NavLink>
                     <NavLink style={{textDecoration:'none'}} to=''><Typography fontWeight='medium' color='secondary'>Activities</Typography></NavLink>
                     <Box display='flex' flexDirection='row' alignItems='center'>
                         <Typography className='Title' fontWeight='large' color='secondary' variant='h6' sx={{ display: { xs: 'none', sm: 'block' } }}>Give Back Nation</Typography>

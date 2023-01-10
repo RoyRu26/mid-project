@@ -6,22 +6,24 @@
     height: 100vh;
     width: 100vw;
 }
-.video{
-    object-fit: cover;
-    height: 100px;
-}
-.HomePageVideo{
+.blackDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20%;
-    border-radius: 1vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
 }
-.GetStartedBtn{
-    /* position: relative;
-    z-index: 3;
-    right: 50%;
-    top:50%; */
+video{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
 }
-/* .ScrollingImgs{
+.content{
+    position:absolute;
+    z-index: 1;
+}
+.ScrollingImgs{
     position: absolute;
     margin-top: 10vh;
     top: 100%;
@@ -29,6 +31,8 @@
     width: 100vw;
     height: 20vh;
     background-color: aqua;
-   
-} */
+}
+.AboutNavLink{
+    text-decoration: none;
+}
 
