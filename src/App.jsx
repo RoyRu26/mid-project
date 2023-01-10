@@ -2,6 +2,7 @@ import { createTheme } from "@mui/material";
 import { fontWeight, ThemeProvider } from "@mui/system";
 import { Routes , Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import HomePage from "./components/HomePage/HomePage";
 
 const theme = createTheme({
   palette: {
