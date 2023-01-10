@@ -3,6 +3,7 @@ import { fontWeight, ThemeProvider } from "@mui/system";
 import { Routes , Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage/HomePage";
+import Footer from './components/Footer/Footer';
 
 const theme = createTheme({
   palette: {
@@ -22,13 +23,12 @@ const theme = createTheme({
 })
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <NavBar/>
-      <Routes>
-        {/* <Route path='/' element={<HomePage/>}/> */}
-        <HomePage/>
-      </Routes>
-    </ThemeProvider>
+    <div className="App">
+
+      <div className='FooterDiv'>
+      <Footer />
+      </div>
+      </div>
   );
 }
 
