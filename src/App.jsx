@@ -8,6 +8,7 @@ import About from "./components/About";
 import Context from "./components/Context";
 import { createContext } from 'react';
 import { useContext } from "react";
+import GetStarted from "./components/GetStarted";
 export const  actList = createContext()
 
 
@@ -33,10 +34,11 @@ function App() {
   return (
     <actList.Provider value={contextActList}>
     <ThemeProvider theme={theme}>
-      <NavBar />  
+      <NavBar/>  
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/About" element={<About/>}/>
+        <Route path="/GetStarted" element={<GetStarted/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>

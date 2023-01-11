@@ -7,7 +7,7 @@ function HomePage() {
             <div className='HomePage'>
                 <div className='blackDiv'></div>
                 <div className='content'><Typography color='primary' fontSize='6vw' fontWeight='large'>Your time, your talent, <br/> your impact.</Typography>
-               <NavLink className='AboutNavLink' to='/About'><Button color='secondary' variant="contained" disableElevation>Get started</Button></NavLink> 
+               <NavLink className='AboutNavLink' to='/GetStarted'><Button color='secondary' variant="contained" disableElevation>Get started</Button></NavLink> 
                 </div>
                 <video autoPlay loop muted>
                     <source type='video/mp4' src='https://www.volunteerworld.com/static/banner.mp4' />
