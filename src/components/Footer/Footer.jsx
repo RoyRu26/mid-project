@@ -1,10 +1,8 @@
 import "./Footer.css"
 import InstagramIcon from '@mui/icons-material/Instagram';
-import img from "../Footer/a.png"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import ShareIcon from '@mui/icons-material/Share';
 import { Box, IconButton, Typography } from "@mui/material";
 import SpaIcon from '@mui/icons-material/Spa';
 
