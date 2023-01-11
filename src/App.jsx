@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import About from "./components/About";
 import Context from "./components/Context";
 import { createContext } from 'react';
-import { useContext } from "react";
 import GetStarted from "./components/GetStarted";
 export const  actList = createContext()
 
@@ -29,8 +28,8 @@ const theme = createTheme({
   }
 })
 function App() {
-  const {x}=Context()
-  const contextActList={x}
+  const {x,actArr}=Context()
+  const contextActList={x,actArr}
   return (
     <actList.Provider value={contextActList}>
     <ThemeProvider theme={theme}>

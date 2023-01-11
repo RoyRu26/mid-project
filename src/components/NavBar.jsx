@@ -7,12 +7,14 @@ import SpaIcon from '@mui/icons-material/Spa';
 import { Box } from '@mui/system';
 import { NavLink } from 'react-router-dom';
 
+
 function NavBar() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
     const StyledToolBar = styled(Toolbar)({
         display: 'flex',
         justifyContent: 'space-between'
     })
+    // const arr=[1,2,3,4,5]
     return (
         <Box>
             <AppBar position='fixed' sx={{ marginBottom: '30px', zIndex: '1' }}>
@@ -29,8 +31,9 @@ function NavBar() {
                 </StyledToolBar>
             </AppBar>
             <Drawer anchor='right' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
-                <Box p='3%' width='30vw' textAlign='center' role='presentation'>
-
+                <Box display='flex' flexDirection='column' gap='3vw' p='1vw' height='100%' width='20vw' textAlign='center' role='presentation'>
+                <NavLink style={{textDecoration:'none'}} to='/About'><Typography fontWeight='medium' color='secondary'>My Saved Activities</Typography></NavLink>
+                {/* <Typography>{arr.map(a=><ul><li>{a}</li></ul>)}</Typography> */}
                 </Box>
             </Drawer>
         </Box>
