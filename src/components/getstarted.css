@@ -9,3 +9,97 @@
     object-fit: cover;
     background-color: rgb(218, 236, 251);
 }
+.flag{
+    object-fit: contain;
+}
+.flagText{
+    text-align: center;
+    display: none;
+}
+.SA{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdE-MPjKC8LyE3nonpLyf-aXUpRRUBAQGq_hNclyFif8bxc-05C3cntD4Xji6Gml0SPs&usqp=CAU');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.SA:hover{
+    opacity: .5;
+}
+.SA:hover .flagText{
+    display: block;
+}
+.Thailand{
+    background-image: url('https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Costa{
+    background-image: url('https://flagdom.com/flag-resources/flag-images/international/costa-rica/costa-rica-flag_3000x1800.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Peru{
+    background-image: url('https://cdn.britannica.com/48/3448-004-33B5D198/Flag-Peru.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Tansania{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Tanzania.svg/2560px-Flag_of_Tanzania.svg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Ecuador{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/800px-Flag_of_Ecuador.svg.png?20140720204051');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Indonesia{
+    background-image: url('https://cdn.britannica.com/48/1648-004-A33B72D8/Flag-Indonesia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Brazil{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
+.Nepal{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Flag_of_Nepal_%28white_background%2C_aspect_ratio_3-2%29.svg/2560px-Flag_of_Nepal_%28white_background%2C_aspect_ratio_3-2%29.svg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 10vw;
+    border-radius: 12%;
+    margin: 1.5%;
+}
