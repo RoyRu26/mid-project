@@ -10,10 +10,10 @@ import SpaIcon from '@mui/icons-material/Spa';
 
 function Footer() {
     return (
-        <Box display='flex' justifyContent='space-around' alignItems='center' width='100%' position='sticky' bottom='0'>
+        <Box className='FooterDiv'>
             <SpaIcon color="secondary"/>
             <a href="emailto: GiveBackNation@gmail.com" style={{textDecoration:'none'}}><Typography color='secondary' fontWeight='large'>Email Us</Typography></a>
-            <IconButton><ShareIcon color="secondary"></ShareIcon></IconButton>
+            {/* <IconButton><ShareIcon color="secondary"></ShareIcon></IconButton> */}
             <a href="https://www.instagram.com/"><IconButton size="small"><InstagramIcon color="secondary"></InstagramIcon></IconButton></a>
             <a href="https://www.facebook.com/"><IconButton size="small"><FacebookIcon color="secondary"></FacebookIcon></IconButton></a>
             <a href="https://www.twitter.com/"><IconButton size="small"><TwitterIcon color="secondary"></TwitterIcon></IconButton></a>

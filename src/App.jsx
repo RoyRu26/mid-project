@@ -25,15 +25,13 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
+       
       <NavBar />
-      <HomePage />
-      <div className='FooterDiv'>
-        <Footer />
-      </div>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/About" element={<About/>}/>
       </Routes>
+      <Footer/>
     </ThemeProvider>
   );
 }
