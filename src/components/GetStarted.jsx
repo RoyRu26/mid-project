@@ -15,7 +15,7 @@ function GetStarted(props) {
     return (
         <div className='container'>
             <Box height='80%' width='40%' bgcolor='white' borderRadius='4%' marginTop='5%' display='flex' flexDirection='column' justifyContent='space-evenly'>
-                <Typography>Choose a country</Typography>
+                <Typography color='secondary'>Choose a country</Typography>
                 <Input type='text' placeholder='counry' sx={{border:'3% solid black'}} onChange={(e) => setCountry(e.target.value)}/>
             </Box>
         </div>
