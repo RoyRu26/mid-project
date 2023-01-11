@@ -1,0 +1,11 @@
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('');
+    object-fit: cover;
+    background-color: rgb(218, 236, 251);
+}
