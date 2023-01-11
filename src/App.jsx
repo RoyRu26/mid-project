@@ -8,6 +8,7 @@ import About from "./components/About";
 import Context from "./components/Context";
 import { createContext } from 'react';
 import GetStarted from "./components/GetStarted";
+import ActTypeFilter from "./components/actType/ActTypeFilter";
 export const  actList = createContext()
 
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/GetStarted" element={<GetStarted/>}/>
+        <Route path="/ActTypeFilter" element={<ActTypeFilter/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>

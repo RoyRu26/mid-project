@@ -26,6 +26,7 @@ function NavBar() {
                     </Box>
                     <NavLink style={{textDecoration:'none'}} to='/About'><Typography fontWeight='medium' color='secondary'>About</Typography></NavLink>
                     <NavLink style={{textDecoration:'none'}} to='/GetStarted'><Typography fontWeight='medium' color='secondary'>Activities</Typography></NavLink>
+                    <NavLink style={{textDecoration:'none'}} to='/ActTypeFilter'><Typography fontWeight='medium' color='secondary'>ActTypeFilter</Typography></NavLink>
                     </Box>
                     <IconButton size='large' edge='start' color='secondary' onClick={() => setIsDrawerOpen(true)}><MenuIcon /></IconButton>
                 </StyledToolBar>
