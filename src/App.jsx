@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage/HomePage";
 import Footer from './components/Footer/Footer';
 import About from "./components/About";
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -27,6 +28,14 @@ function App() {
     <ThemeProvider theme={theme}>
        
       <NavBar />
+
+      
+      
+      <HomePage />
+      
+      <div className='FooterDiv'>
+        <Footer />
+      </div>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/About" element={<About/>}/>
