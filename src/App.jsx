@@ -33,15 +33,7 @@ function App() {
   return (
     <actList.Provider value={contextActList}>
     <ThemeProvider theme={theme}>
-      <NavBar />
-
-      
-      
-      <HomePage />
-      
-      <div className='FooterDiv'>
-        <Footer />
-      </div>
+      <NavBar />  
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/About" element={<About/>}/>
