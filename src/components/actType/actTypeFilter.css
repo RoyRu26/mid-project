@@ -1,0 +1,5 @@
+.listItemAct:hover {
+    box-shadow: 0px 0px 21px 3px rgba(142,36,170,0.25);
+    cursor: pointer;
+}
+  

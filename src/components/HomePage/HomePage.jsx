@@ -6,7 +6,7 @@ function HomePage() {
     return (
             <div className='HomePage'>
                 <div className='blackDiv'></div>
-                <div className='content'><Typography color='primary' fontSize='6vw' fontWeight='large'>Your time, your talent, <br/> your impact.</Typography>
+                <div className='content'><Typography marginBottom='5vw' color='primary' fontSize='6vw' fontWeight='large'>Your time, your talent, <br/> your impact.</Typography>
                <NavLink className='AboutNavLink' to='/GetStarted'><Button color='secondary' variant="contained" disableElevation>Get started</Button></NavLink> 
                 </div>
                 <video autoPlay loop muted>
