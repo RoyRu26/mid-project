@@ -5,6 +5,10 @@ import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage/HomePage";
 import Footer from './components/Footer/Footer';
 import About from "./components/About";
+import Context from "./components/Context";
+import { createContext } from 'react';
+import { useContext } from "react";
+export const  actList = createContext()
 
 
 const theme = createTheme({
@@ -24,9 +28,11 @@ const theme = createTheme({
   }
 })
 function App() {
+  const {x}=Context()
+  const contextActList={x}
   return (
+    <actList.Provider value={contextActList}>
     <ThemeProvider theme={theme}>
-       
       <NavBar />
 
       
@@ -42,6 +48,7 @@ function App() {
       </Routes>
       <Footer/>
     </ThemeProvider>
+    </actList.Provider>
   );
 }
 
