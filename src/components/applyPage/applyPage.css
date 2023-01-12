@@ -1,0 +1,17 @@
+.applyContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.applyContainer div{
+    width: 70%;
+    height: 70%;
+    /* background-image: url("https://st2.depositphotos.com/1000423/8356/i/950/depositphotos_83561782-stock-photo-i-am-strong-enough.jpg"); */
+    background-size: cover;
+}
+
+
+.applyContainer div {
+
+}
