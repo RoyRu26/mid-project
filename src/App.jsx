@@ -40,6 +40,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="/GetStarted" element={<GetStarted/>}/>
         <Route path="/ActTypeFilter" element={<ActTypeFilter/>}/>
+        <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>
