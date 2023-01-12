@@ -9,14 +9,16 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import './actTypeFilter.css'
+import {useParams} from 'react-router-dom'
 function ActTypeFilter() {
+    const params=useParams()
+   console.log(params);
     const {actArr}=useContext(actList)
     return (
         <div className='container'>
             <Box height='80%' width='40%' bgcolor='white' borderRadius='4%' marginTop='5%' display='flex' flexDirection='column' justifyContent='space-evenly'>
             <Typography fontSize='large' marginBottom='5%' textAlign='center' fontWeight='medium' color='secondary'>Choose an Activity</Typography>
-                {actArr.map((a)=>
-                a.location==="South Africa"&&
+                {actArr.map((a)=>a.location===params.country&&
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem sx={{marginLeft:'1vw',border:' 1px solid transparent', borderRadius: '1vw'}} className='listItemAct'>
                         <ListItemAvatar >
