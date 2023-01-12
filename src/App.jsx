@@ -9,6 +9,7 @@ import Context from "./components/Context";
 import { createContext } from 'react';
 import GetStarted from "./components/GetStarted";
 import ActTypeFilter from "./components/actType/ActTypeFilter";
+import ApplyPage from "./components/applyPage/ApplyPage";
 export const  actList = createContext()
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="/GetStarted" element={<GetStarted/>}/>
         <Route path="/ActTypeFilter" element={<ActTypeFilter/>}/>
+        <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
       </Routes>
       <Footer/>
