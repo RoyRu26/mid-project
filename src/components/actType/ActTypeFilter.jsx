@@ -9,10 +9,9 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import './actTypeFilter.css'
-import {useParams} from 'react-router-dom'
+import {NavLink, useParams} from 'react-router-dom'
 function ActTypeFilter() {
     const params=useParams()
-   console.log(params);
     const {actArr}=useContext(actList)
     return (
         <div className='container'>
@@ -20,12 +19,12 @@ function ActTypeFilter() {
             <Typography fontSize='large' marginBottom='5%' textAlign='center' fontWeight='medium' color='secondary'>Choose an Activity</Typography>
                 {actArr.map((a)=>a.location===params.country&&
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                    <ListItem sx={{marginLeft:'1vw',border:' 1px solid transparent', borderRadius: '1vw'}} className='listItemAct'>
+                    <NavLink className='actLink' to={`/ApplyPage`} state={{country: a.location, actType: a.actType, days: (a.days)}}><ListItem sx={{marginLeft:'1vw',border:' 1px solid transparent', borderRadius: '1vw'}} className='listItemAct'>
                         <ListItemAvatar >
                             <Avatar alt='actTypeImg' src={a.actTypeImg}/>
                         </ListItemAvatar>
-                        <ListItemText primary={a.actType} secondary={a.description}/>
-                    </ListItem>
+                        <ListItemText primary={`${a.actType} - ${a.days} days`} secondary={a.description}/>
+                    </ListItem></NavLink>
                 </List>
                 )}
             </Box>

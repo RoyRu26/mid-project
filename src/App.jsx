@@ -30,8 +30,8 @@ const theme = createTheme({
   }
 })
 function App() {
-  const {x,actArr}=Context()
-  const contextActList={x,actArr}
+  const {x,actArr,userArr, setUserArr}=Context()
+  const contextActList={x,actArr,userArr, setUserArr}
   return (
     <actList.Provider value={contextActList}>
     <ThemeProvider theme={theme}>
@@ -43,6 +43,7 @@ function App() {
         <Route path="/ActTypeFilter" element={<ActTypeFilter/>}/>
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
+        <Route path="/ApplyPage" element={<ApplyPage/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>

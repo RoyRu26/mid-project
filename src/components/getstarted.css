@@ -23,15 +23,14 @@
     height: 7vw;
     width: 10vw;
     border-radius: 12%;
+    opacity: 70%;
+}
+#flagDiv:hover{
+    cursor: pointer;
+    opacity: 100%;
 }
 .SA{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdE-MPjKC8LyE3nonpLyf-aXUpRRUBAQGq_hNclyFif8bxc-05C3cntD4Xji6Gml0SPs&usqp=CAU');
-}
-.SA:hover{
-    opacity: .5;
-}
-.SA:hover .flagText{
-    display: block;
 }
 .Thailand{
     background-image: url('https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg');
@@ -56,4 +55,10 @@
 }
 .Nepal{
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Flag_of_Nepal_%28white_background%2C_aspect_ratio_3-2%29.svg/2560px-Flag_of_Nepal_%28white_background%2C_aspect_ratio_3-2%29.svg.png');
+}
+.applyDiv{
+    height: 100vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+    margin-top: 4.4%;
 }
