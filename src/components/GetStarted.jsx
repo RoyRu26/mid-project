@@ -18,7 +18,7 @@ function GetStarted(props) {
     // const countries = ['South Africa', 'Costa Rica', 'Brazil', 'Peru', 'Tanzania', 'Ecuador', 'Indonesia', 'Thailand', 'Nepal']
     return (
         <div className='container'>
-            <Box height='80%' width='40%' bgcolor='white' borderRadius='4%' marginTop='5%' display='flex' flexDirection='column' justifyContent='space-evenly' alignItems='center'>
+            <Box height='80%' width='40%' bgcolor='rgba(255,255,255,.8)' borderRadius='4%' marginTop='5%' display='flex' flexDirection='column' justifyContent='space-evenly' alignItems='center'>
                 <Typography fontSize='large' marginBottom='2%' textAlign='center' fontWeight='medium' color='secondary'>Choose a Country</Typography>
                 {/* <Autocomplete
                         disablePortal
@@ -27,7 +27,7 @@ function GetStarted(props) {
                         onChange = {(event,value) => setCountry(value)}
                         renderInput={(params) => <TextField {...params} la="country" />}
                     /> */}
-                <Box width='100%' height='80%' display='flex' justifyContent='center' flexDirection='row' flexWrap='wrap'  >
+                <Box width='90%' gap='3%' height='80%' display='flex' justifyContent='center' flexDirection='row' flexWrap='wrap'  >
                     <NavLink to="/ActTypeFilter/South Africa"><div id='flagDiv' className='SA'><p className='flagText'>South Africa</p></div></NavLink>
                     <NavLink to='/ActTypeFilter/Thailand'><div id='flagDiv' className='Thailand'><Typography className='flagText'>Thailand</Typography></div></NavLink>
                     <NavLink to='/ActTypeFilter/Costa Rica'><div id='flagDiv' className='Costa'><Typography className='flagText'>Costa Rica</Typography></div></NavLink>
