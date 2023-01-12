@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 function Context() {
     const x=5
+    const [userArr, setUserArr] = useState([])
     const actArr=[
         //africa
         {location:"South Africa",
@@ -8,6 +11,7 @@ function Context() {
         description:"WildLife, Nature Volunteer",
         conditions: 8,
         days:50,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"South Africa",
         actType:"Humanitarian Support",
@@ -15,6 +19,7 @@ function Context() {
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
         days:40,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"South Africa",
         actType:"Education",
@@ -22,6 +27,7 @@ function Context() {
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 8,
         days:35,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"South Africa",
         actType:"Animal Care",
@@ -29,6 +35,7 @@ function Context() {
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
         days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"South Africa",
         actType:"Adventure And Tours",
@@ -36,6 +43,7 @@ function Context() {
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
         days:14,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //costa rica
         {location:"Costa Rica",
@@ -43,28 +51,32 @@ function Context() {
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Costa Rica",
         actType:"Animal Care",
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 6,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Costa Rica",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Costa Rica",
         actType:"Education",
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 9,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //tansania
         {location:"Tanzania",
@@ -72,28 +84,32 @@ function Context() {
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 6,
-        days:45
+        days:45,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Tanzania",
         actType:"Education",
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 7,
-        days:25
+        days:25,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Tanzania",
         actType:"Animal Care",
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 8,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Tanzania",
         actType:"Humanitarian Support",
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 5,
-        days:25
+        days:25,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //ecuador
         {location:"Ecuador",
@@ -101,28 +117,32 @@ function Context() {
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 7,
-        days:25
+        days:25,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Ecuador",
         actType:"Humanitarian Support",
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
-        days:14
+        days:14,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Ecuador",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
-        days:25
+        days:25,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Ecuador",
         actType:"WildLife",
         description:"WildLife, Nature Volunteer",
         actTypeImg:'https://cdn.tourradar.com/s3/tour/645x430/108837_5df9d96bc01ed.jpg',
         conditions: 7,
-        days:25
+        days:25,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //indonesia
         {location:"Indonesia",
@@ -130,28 +150,32 @@ function Context() {
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 8,
-        days:14
+        days:14,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Indonesia",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 6,
-        days:21
+        days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Indonesia",
         actType:"Humanitarian Support",
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 10,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Indonesia",
         actType:"Education",
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 10,
-        days:28
+        days:28,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //thailand
         {location:"Thailand",
@@ -159,28 +183,32 @@ function Context() {
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 8,
-        days:21
+        days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Thailand",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
-        days:21
+        days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Thailand",
         actType:"Humanitarian Support",
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
-        days:28
+        days:28,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Thailand",
         actType:"WildLife",
         description:"WildLife, Nature Volunteer",
         actTypeImg:'https://cdn.tourradar.com/s3/tour/645x430/108837_5df9d96bc01ed.jpg',
         conditions: 8,
-        days:21
+        days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //peru
         {location:"Peru",
@@ -188,28 +216,32 @@ function Context() {
         description:'Healthcare, medical & NGO support',
         actTypeImg:'https://image.volunteerworld.com/56d390e2b1fd956472e094aa72f5a7c02bc8fb3e/humanitarian.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
-        days:35
+        days:35,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Peru",
         actType:"WildLife",
         description:"WildLife, Nature Volunteer",
         actTypeImg:'https://cdn.tourradar.com/s3/tour/645x430/108837_5df9d96bc01ed.jpg',
         conditions: 9,
-        days:14
+        days:14,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Peru",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 10,
-        days:28
+        days:28,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Peru",
         actType:"Education",
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 9,
-        days:60
+        days:60,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //brzail
         {location:"Brazil",
@@ -217,28 +249,32 @@ function Context() {
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 10,
-        days:60
+        days:60,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Brazil",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
-        days:45
+        days:45,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Brazil",
         actType:"WildLife",
         description:"WildLife, Nature Volunteer",
         actTypeImg:'https://cdn.tourradar.com/s3/tour/645x430/108837_5df9d96bc01ed.jpg',
         conditions: 7,
-        days:35
+        days:35,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Brazil",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 8,
-        days:28
+        days:28,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         //nepal
         {location:"Nepal",
@@ -246,30 +282,34 @@ function Context() {
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 9,
-        days:42
+        days:42,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Nepal",
         actType:"Adventure And Tours",
         description:'Meaningful holidays & small group tours',
         actTypeImg:'https://image.volunteerworld.com/37ddc4eb39b0bc3b252906ab25edd70ed2fda735/adventure-tours.png?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 7,
-        days:21
+        days:21,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Nepal",
         actType:"Animal care",
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 10,
-        days:30
+        days:30,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Nepal",
         actType:"Education",
         description:'Education, child care & community programs',
         actTypeImg:'https://image.volunteerworld.com/a3578a6db922aa51e262b2975148433d48951552/culture-and-arts-banner.jpg?auto=format%2Cenhance&crop=edges&fit=crop&h=200&q=75&w=200',
         conditions: 9,
-        days:28
+        days:28,
+        dates: ['October 2023','December 2023','August 2023','February 2024']
         },
     ];
-    return {x,actArr}
+    return {x,actArr,userArr, setUserArr}
 };
 export default Context;
