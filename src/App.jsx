@@ -4,13 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage/HomePage";
 import Footer from './components/Footer/Footer';
-import About from "./components/About";
 import Context from "./components/Context";
 import { createContext } from 'react';
 import GetStarted from "./components/GetStarted";
 import ActTypeFilter from "./components/actType/ActTypeFilter";
 import ApplyPage from "./components/applyPage/ApplyPage";
 import ActTypeDetail from "./components/actTypeDetail/ActTypeDetail";
+import NotFound from "./components/NotFound";
+
 export const  actList = createContext()
 
 
@@ -39,13 +40,13 @@ function App() {
       <NavBar/>  
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/About" element={<About/>}/>
         <Route path="/GetStarted" element={<GetStarted/>}/>
         <Route path="/ActTypeFilter" element={<ActTypeFilter/>}/>
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeDetail" element={<ActTypeDetail/>}/>
+        <Route path="/*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>

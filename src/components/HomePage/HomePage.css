@@ -3,7 +3,8 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100vw;
 }
 .blackDiv{
@@ -16,7 +17,7 @@
 }
 video{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     object-fit:cover;
 }
 .content{
@@ -32,7 +33,3 @@ video{
     height: 20vh;
     background-color: aqua;
 }
-.AboutNavLink{
-        text-decoration: none;
-}
-

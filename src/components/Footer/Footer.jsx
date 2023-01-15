@@ -25,14 +25,10 @@ function Footer() {
            
         }
     return (
-        <Box className='FooterDiv'>
-            <SpaIcon color="secondary"/>
-            {/* <IconButton><ShareIcon color="secondary"></ShareIcon></IconButton> */}
-            <a href="https://www.instagram.com/"><IconButton size="small"><InstagramIcon color="secondary"></InstagramIcon></IconButton></a>
-            <a href="https://www.facebook.com/"><IconButton size="small"><FacebookIcon color="secondary"></FacebookIcon></IconButton></a>
-            <a href="https://www.twitter.com/"><IconButton size="small"><TwitterIcon color="secondary"></TwitterIcon></IconButton></a>
-            <a href="https://www.youtube.com/"><IconButton size="small"><YouTubeIcon color="secondary"></YouTubeIcon></IconButton></a>
-            <a href="emailto: GiveBackNation@gmail.com" style={{textDecoration:'none'}}>
+        <Box sx={{ bgcolor: 'rgb(245, 243, 243)', height: {xs: '10vw', sm: '5vw'}}} className='FooterDiv' display='flex' justifyContent='space-between' alignItems='center' width='100vw'>
+            <Box display='flex' flexDirection='row' gap='5vw' alignItems='center' marginLeft='3%'>
+                <SpaIcon color="secondary" />
+                <a href="emailto: GiveBackNation@gmail.com" style={{textDecoration:'none'}}>
                  <Drawer anchor='bottom' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
                 <form style={{display:'flex'}} ref={form} >
                 <Box display='flex' flexDirection='row' alignItems='center' gap='3vw' p='1vw' height='10vh' width='100%' textAlign='center' role='presentation'>
@@ -44,8 +40,13 @@ function Footer() {
                </form>
                 </Drawer><Typography onClick={() => setIsDrawerOpen(true)} color='secondary' fontWeight='large'>Email Us</Typography>
             </a>
-
-           
+            </Box>
+            <Box display='flex' flexDirection='row' gap='5vw' marginRight='3%'>
+                <a href="https://www.instagram.com/" target='_blank'><IconButton size="small"><InstagramIcon color="secondary"></InstagramIcon></IconButton></a>
+                <a href="https://www.facebook.com/" target='_blank'><IconButton size="small"><FacebookIcon color="secondary"></FacebookIcon></IconButton></a>
+                <a href="https://www.twitter.com/" target='_blank'><IconButton size="small"><TwitterIcon color="secondary"></TwitterIcon></IconButton></a>
+                <a href="https://www.youtube.com/" target='_blank'><IconButton size="small"><YouTubeIcon color="secondary"></YouTubeIcon></IconButton></a>
+            </Box>
         </Box>
 
 
