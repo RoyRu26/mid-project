@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Context() {
     const x=5
-    const [userArr, setUserArr] = useState([])
+    const [userArr, setUserArr] = useState(JSON.parse(localStorage.getItem('requests')))
     const actArr=[
         //africa
         {location:"South Africa",

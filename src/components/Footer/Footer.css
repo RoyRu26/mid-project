@@ -1,18 +1,4 @@
-.FooterDiv{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #2f1531;
-    width: 100%;
-    background-color: white ;
-    height: 10vh;
-}
-.FooterDiv img
-{ 
-    width: 12vw;
-    height: 12vh;
-    border-radius: 100%;
-}
+
 .FooterDiv svg {
-    font-size: xxx-large;
+    font-size: 3vw;
 }
