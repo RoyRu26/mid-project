@@ -10,6 +10,7 @@ import { createContext } from 'react';
 import GetStarted from "./components/GetStarted";
 import ActTypeFilter from "./components/actType/ActTypeFilter";
 import ApplyPage from "./components/applyPage/ApplyPage";
+import ActTypeDetail from "./components/actTypeDetail/ActTypeDetail";
 export const  actList = createContext()
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
+        <Route path="/ActTypeDetail" element={<ActTypeDetail/>}/>
       </Routes>
       <Footer/>
     </ThemeProvider>
