@@ -16,6 +16,7 @@
     text-align: center;
     display: none;
     cursor: pointer;
+   
 }
 #flagDiv{
     margin: 2%;
@@ -25,6 +26,7 @@
     width: 10vw;
     border-radius: 12%;
     opacity: 70%;
+    text-align: center;
 }
 #flagDiv:hover{
     opacity: 100%;

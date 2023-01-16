@@ -16,12 +16,12 @@ function AdminLogIn() {
         }
     }
     return (
-        <Box width='100vw' height='100vh' display='flex' alignItems='center' flexDirection='column' marginTop='7%'>
+        <Box sx={{marginTop:{xs:'15vw'}}} width='100vw' height='100vh' display='flex' alignItems='center' flexDirection='column' marginTop='7%'>
             <Typography fontSize='6vw' color='secondary' fontWeight='large' marginBottom='5%'>Admin Log In</Typography>
-            <Box display='flex' flexDirection='row' alignSelf='center' alignItems='center'>
+            <Box display='flex' flexDirection='column' gap='5vw' alignSelf='center' alignItems='center'>
                 <TextField color='secondary' sx={{ p: '3%' }} type='text' onChange={(e) => setAdminName(e.target.value)} placeholder='Name'></TextField>
                 <TextField color='secondary' sx={{ p: '3%' }} type='password' onChange={(e) => setAdminPassword(e.target.value)} placeholder='Password'></TextField>
-                <Button color='secondary' variant='contained' onClick={checkAdmin} sx={{ width: '8vw', height:'3.7vw' }}>Log In</Button>
+                <Button color='secondary' variant='contained' onClick={checkAdmin} sx={{ width:{ sm:'8vw',xs:'10vw'}, height:{sm:'3.7vw',xs:'11vw'} }}>Log In</Button>
             </Box>
         </Box>
     );
