@@ -37,17 +37,20 @@ function NavBar() {
                 </StyledToolBar>
             </AppBar>
             <Drawer anchor='right' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
-                <Box display='flex' flexDirection='column' gap='3vw' p='1vw' height='100%' sx={{width: {xs: '50vw', sm: '20vw'}}} textAlign='center' role='presentation'>
-                    <Typography fontWeight='medium' color='secondary'>Pending Requests</Typography>
-                    {userArr.length === 0 ? <Typography display='flex' alignItems='center' gap='3%' justifyContent='center'><SentimentVeryDissatisfiedIcon/>Nothing to see</Typography> :
-                        <List>{userArr.map((a, i) =>
-                            <ListItem>
-                                <ListItemIcon><SendIcon /></ListItemIcon>
-                                <Typography>{`${a.actType} in ${a.location}`}<br />{a.dates}
-                                    <IconButton onClick={() => { if (window.confirm('Are you sure you wish to delete this request?')) deleteReq(i) }}><DeleteForeverIcon /></IconButton></Typography>
-                            </ListItem>
-                        )}</List>
-                    }
+                <Box display='flex' justifyContent='space-between' flexDirection='column' gap='3vw' p='1vw' height='100%' sx={{ width: { xs: '50vw', sm: '20vw' } }} textAlign='center' role='presentation'>
+                    <Box>
+                        <Typography fontWeight='medium' color='secondary'>Pending Requests</Typography>
+                        {userArr.length === 0 ? <Typography display='flex' alignItems='center' gap='3%' justifyContent='center'><SentimentVeryDissatisfiedIcon />Nothing to see</Typography> :
+                            <List>{userArr.map((a, i) =>
+                                <ListItem key={i}>
+                                    <ListItemIcon><SendIcon /></ListItemIcon>
+                                    <Typography>{`${a.actType} in ${a.location}`}<br />{a.dates}
+                                        <IconButton onClick={() => { if (window.confirm('Are you sure you wish to delete this request?')) deleteReq(i) }}><DeleteForeverIcon /></IconButton></Typography>
+                                </ListItem>
+                            )}</List>
+                        }
+                    </Box>
+                    <NavLink style={{ textDecoration: 'none' }} to='./AdminLogIn'><Typography color='secondary' sx={{fontSize: {xs: '4vw', sm: '1vw'}}} fontWeight='medium'>Admin Access</Typography></NavLink>
                 </Box>
             </Drawer>
         </Box>

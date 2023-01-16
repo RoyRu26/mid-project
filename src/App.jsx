@@ -11,6 +11,8 @@ import ActTypeFilter from "./components/actType/ActTypeFilter";
 import ApplyPage from "./components/applyPage/ApplyPage";
 import ActTypeDetail from "./components/actTypeDetail/ActTypeDetail";
 import NotFound from "./components/NotFound";
+import AdminLogIn from "./components/AdminLogIn";
+import AdminPage from "./components/AdminPage";
 
 export const  actList = createContext()
 
@@ -46,6 +48,8 @@ function App() {
         <Route path="/ActTypeFilter/:country" element={<ActTypeFilter/>}/>
         <Route path="/ApplyPage" element={<ApplyPage/>}/>
         <Route path="/ActTypeDetail" element={<ActTypeDetail/>}/>
+        <Route path="/AdminLogIn" element={<AdminLogIn/>}/>
+        <Route path="/AdminPage" element={<AdminPage/>}/>
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
