@@ -39,8 +39,7 @@ function NavBar() {
             <Drawer anchor='right' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
                 <Box display='flex' flexDirection='column' gap='3vw' p='1vw' height='100%' sx={{width: {xs: '50vw', sm: '20vw'}}} textAlign='center' role='presentation'>
                     <Typography fontWeight='medium' color='secondary'>Pending Requests</Typography>
-                    {userArr.length === 0 ? <Typography display='flex' alignItems='center' gap='3%' justifyContent='center'><SentimentVeryDissatisfiedIcon/>Nothing to see</Typography> 
-                    :
+                    {userArr.length === 0 ? <Typography display='flex' alignItems='center' gap='3%' justifyContent='center'><SentimentVeryDissatisfiedIcon/>Nothing to see</Typography> :
                         <List>{userArr.map((a, i) =>
                             <ListItem>
                                 <ListItemIcon><SendIcon /></ListItemIcon>

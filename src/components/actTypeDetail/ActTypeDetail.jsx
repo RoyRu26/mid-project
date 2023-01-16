@@ -54,6 +54,7 @@ function ActTypeDetail() {
             experiencing the amazing culture and landscapes of this stunning country. 
             And there's the feeling of satisfaction for volunteers of knowing they've worked hard 
             to help the lives of individual animals and the continuation of the species in general.`
+            arr=wildLifeImages
     }
     else if(location.state.actType === 'Humanitarian Support'){
         text=`Humanitarian support is a vital aspect of any community and is often provided by
@@ -104,8 +105,8 @@ function ActTypeDetail() {
     }
     
     return (
-        <div style={{minHeight:'100vh'}} className='applyDiv'>
-            <Typography p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
+        <div style={{backgroundColor:'wheat',width:'100vw',height:'100vh'}}>
+            <Typography marginTop='1vw' p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
             <Box display='flex' flexDirection='row' justifyContent='space-between'>
             <div style={{width:'35%',marginLeft:'2vw',flexDirection:'column'}}><Typography color='secondary' >{text}</Typography>
                 <div style={{marginTop:'1vw',display:'flex',flexDirection:'row',justifyContent:'space-around'}}>
@@ -113,10 +114,10 @@ function ActTypeDetail() {
                     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}><HotelIcon color='secondary'></HotelIcon> <Typography color='secondary'>Housing</Typography></div>
                     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}><LocalTaxiIcon color='secondary'></LocalTaxiIcon> <Typography color='secondary'>Airport Taxi</Typography></div>
                 </div>
-                <div style={{display:'flex',width:'50%',height:'60%'}}>
+                  <div style={{textAlign:'center',marginTop:'2vw'}}><NavLink style={{textDecoration:'none'}} to='/ApplyPage' state={{ country: location.state.country, actType: location.state.actType ,days:location.state.days }}><Button color='secondary' variant="contained" sx={{textAlign:'center'}}>Apply</Button></NavLink></div>  
+                {/* <div style={{display:'flex',width:'50%',height:'60%',alignItems:'center'}}> */}
                     {/* <iframe style={{position:'static'}} width="80%" height="60%" src="https://maps.google.com/maps?q=arusha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"/> */}
-                    <NavLink style={{textDecoration:'none'}} to='/ApplyPage' state={{ country: location.state.country, actType: location.state.actType }}><Button color='secondary' variant="contained" sx={{textAlign:'center'}}>Apply</Button></NavLink>
-                </div>   
+                {/* </div> */}
             </div>
             
             <div style={{width:'55%',height:'50vh',display:'flex',alignItems:'center'}}>
