@@ -106,7 +106,7 @@ function ActTypeDetail() {
 
     return (
         <div style={{ backgroundColor: 'wheat', width: '100vw', minHeight: '100vh' }}>
-            <Typography marginTop='8vh' p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
+            <Typography marginTop='6.5vh' p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
             <Box display='flex' width='100%' sx={{ flexDirection: { xs: 'column', sm: 'row' } ,gap:{xs:'15vw'}}}>
                 <Box sx={{ textAlign:{xs:'center'}, marginLeft:{sm:'0.5vw',xs:'0'} , flexDirection: 'column',width:{sm:'50%',xs:'100%'} }}>
                     <Typography sx={{width:{xs:'100%'},fontSize:{xs:'3vw',sm:'1.5vw'}}} color='secondary'>{text}</Typography>
