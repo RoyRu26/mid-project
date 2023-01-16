@@ -65,3 +65,7 @@
     display: flex;
     justify-content: center;
 }
+#selectDate{
+    color: black;
+    opacity: 50%;
+}

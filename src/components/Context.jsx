@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Context() {
     const x=5
     const [userArr, setUserArr] = useState(JSON.parse(localStorage.getItem('requests')))
+    useEffect(() => {
+        localStorage.setItem('requests', JSON.stringify(userArr))
+    }, [userArr])
     const actArr=[
         //africa
         {location:"South Africa",
