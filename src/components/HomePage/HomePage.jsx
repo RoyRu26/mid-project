@@ -65,7 +65,7 @@ function HomePage() {
             <Box display='flex' justifyContent='center' alignItems='center'>
                 <div className='content'>
                     <Typography marginBottom='5vw' color='primary' fontSize='6vw' fontWeight='large'>Your time, your talent, <br /> your impact.</Typography>
-                    <NavLink style={{ textDecoration: 'none' }} to='/GetStarted'><Button color='secondary' variant="contained" sx={{ height: '3.8vw', width: '11vw', fontSize: '1.1vw', borderRadius: '0.6vw' }} disableElevation>Get started</Button></NavLink>
+                    <NavLink style={{ textDecoration: 'none' }} to='/GetStarted'><Button color='secondary' variant="contained" sx={{ height:{sm: '3.8vw',xs:'9vw'}, width: {sm:'11vw',xs:'10%'}, fontSize: {sm:'1.1vw',xs:'2vw'}, borderRadius: '0.6vw' }} disableElevation>Get started</Button></NavLink>
                 </div>
                 <video autoPlay loop muted>
                     <source type='video/mp4' src='https://www.volunteerworld.com/static/banner.mp4' />
