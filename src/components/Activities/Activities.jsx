@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { NavigateBefore, NavigateNext } from "@mui/icons-material";
 import { Box } from "@mui/system";
 import "./Activities.css"
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 function PhotoSlider() {
@@ -90,23 +92,19 @@ function PhotoSlider() {
     }, [index]);
 
     return (
-        <Box className='BoxClass' height='100vh' marginTop='6%' display='flex' displayFlex='row' justifyContent='space-between' alignItems='center'>
-            <button  onClick={infiLoopPlus}><NavigateBefore/></button>
-            <div className="big">
-            <div className="SliderDiv" >
-                <img ref={imgRef} src={`${photos[index]?.photoPath}`} />
-                
-            </div>
-            
-            </div>
-            <button  onClick={infiLoopMinus}><NavigateNext /></button>
-
-        </Box>
-
-
+        <div style={{marginTop:'3.6%', backgroundColor: 'white', width: '100vw', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: `url('https://wallpapercrafter.com/th800/217070-wallpaper-nature-wallpapers-nature-backgrounds-and.jpg')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+            <Box className='BoxClass' sx={{ bgcolor: 'rgba(255,255,255,.6)' }} height='100vh' width='100vw' display='flex' displayFlex='row' justifyContent='center' alignItems='center'>
+                <ArrowBackIosIcon color='secondary' sx={{ cursor: 'pointer', marginRight: '3%' }} onClick={infiLoopPlus}><NavigateBefore /></ArrowBackIosIcon>
+                <div className="big">
+                    <div className="SliderDiv" >
+                        <img ref={imgRef} src={`${photos[index]?.photoPath}`} />
+                    </div>
+                </div>
+                <ArrowForwardIosIcon color='secondary' sx={{ cursor: 'pointer', marginLeft: '3%' }} onClick={infiLoopMinus}><NavigateNext /></ArrowForwardIosIcon>
+            </Box>
+        </div>
     )
 }
-
 
 export default PhotoSlider
 
