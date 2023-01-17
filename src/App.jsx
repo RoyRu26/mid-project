@@ -13,6 +13,7 @@ import ActTypeDetail from "./components/actTypeDetail/ActTypeDetail";
 import NotFound from "./components/NotFound";
 import AdminLogIn from "./components/AdminLogIn";
 import AdminPage from "./components/AdminPage";
+import PhotoSlider from "./components/Activities/Activities";
 
 export const  actList = createContext()
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/AdminLogIn" element={<AdminLogIn/>}/>
         <Route path="/AdminPage" element={<AdminPage/>}/>
         <Route path="/*" element={<NotFound/>}/>
+        <Route path="/Gallery" element = {<PhotoSlider />} />
       </Routes>
       <Footer/>
     </ThemeProvider>
