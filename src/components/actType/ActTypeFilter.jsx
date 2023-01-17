@@ -19,9 +19,9 @@ function ActTypeFilter() {
                 <Typography fontSize='large' textAlign='center' fontWeight='medium' color='secondary'>Choose an Activity</Typography>
                 <Typography fontSize='large' marginBottom='5%' textAlign='center' fontWeight='large' color='secondary'>{params.country}</Typography>
                 {actArr.map((a , i) => a.location === params.country &&
-                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', borderRadius: '3vw' }}>
+                    <List key={i} sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', borderRadius: '3vw' }}>
                         <NavLink className='actLink' to={`/ActTypeDetail`} state={{ country: a.location, actType: a.actType, days: (a.days) }}>
-                            <ListItem key={i} sx={{ marginLeft: '1vw', border: ' 1px solid transparent', borderRadius: '1vw' }} className='listItemAct'>
+                            <ListItem sx={{ marginLeft: '1vw', border: ' 1px solid transparent', borderRadius: '1vw' }} className='listItemAct'>
                                 <ListItemAvatar >
                                     <Avatar alt='actTypeImg' src={a.actTypeImg} />
                                 </ListItemAvatar>
