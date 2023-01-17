@@ -40,8 +40,6 @@ function ApplyPage() {
             alert('Please Fill All Fields')
         }
     }
-    // localStorage.clear('requests')
-    console.log(location.state.days);
     return (
         <form ref={form} className='applyDiv'>
             <Box height='70%' width='80%' bgcolor='rgba(255,255,255,.95)' borderRadius='3vw' sx={{ marginTop: { xs: '25%', sm: '5%' } }} display='flex' flexDirection='column' justifyContent='space-evenly' alignItems='center'>

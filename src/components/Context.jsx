@@ -297,7 +297,7 @@ function Context() {
         dates: ['October 2023','December 2023','August 2023','February 2024']
         },
         {location:"Nepal",
-        actType:"Animal care",
+        actType:"Animal Care",
         description:'Marine & land environment protection',
         actTypeImg:'https://image.volunteerworld.com/2ba7611e12549f86bc94fa09e5cddbae6962c086/animals.jpeg?auto=format&fit=crop&h=200&q=40&w=200',
         conditions: 10,
