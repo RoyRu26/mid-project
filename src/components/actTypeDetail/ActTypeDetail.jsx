@@ -105,32 +105,31 @@ function ActTypeDetail() {
     }
 
     return (
-        <div style={{ backgroundColor: 'wheat', width: '100vw', minHeight: '100vh' }}>
-            <Typography marginTop='6.5vh' p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
-            <Box display='flex' width='100%' sx={{ flexDirection: { xs: 'column', sm: 'row' } ,gap:{xs:'15vw'}}}>
-                <Box sx={{ textAlign:{xs:'center'}, marginLeft:{sm:'0.5vw',xs:'0'} , flexDirection: 'column',width:{sm:'50%',xs:'100%'} }}>
-                    <Typography sx={{width:{xs:'100%'},fontSize:{xs:'3vw',sm:'1.5vw'}}} color='secondary'>{text}</Typography>
-                    <div style={{ marginTop: '9vw',width:'100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><RestaurantIcon color='secondary'></RestaurantIcon> <Typography sx={{fontSize:{xs:'3vw',sm:'1.5vw'}}} color='secondary'>Food</Typography></div>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><HotelIcon color='secondary'></HotelIcon> <Typography sx={{fontSize:{xs:'3vw',sm:'1.5vw'}}} color='secondary'>Housing</Typography></div>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><LocalTaxiIcon color='secondary'></LocalTaxiIcon> <Typography sx={{fontSize:{xs:'3vw',sm:'1.5vw'}}} color='secondary'>Airport Taxi</Typography></div>
-                    </div>
-                    {/* <div style={{display:'flex',width:'50%',height:'60%',alignItems:'center'}}> */}
-                    {/* </div> */}
-                </Box>
-                <Box sx={{ width:{sm:'50%',xs:'100%'}, display: 'flex', alignItems: 'center' }}>
-                    <ArrowBackIosIcon sx={{ borderRadius: '50%', cursor: 'pointer'}} onClick={() => setSwipe(swipe + 1 === arr.length ? 1 : swipe + 1)}>+</ArrowBackIosIcon>
-                    <Box sx={{marginTop:{xs:'4vw'},display:'flex',flexDirection:'column',width:'100%',height:'100%'}}>
-                    <Box sx={{width:{sm:'100%',xs:'100%'},height:{sm:'100%',xs:'50vw'}, backgroundImage: `url(${arr[swipe]})`, backgroundSize: 'cover', borderRadius: '0.5vw'}}></Box>
-                    <div style={{ textAlign: 'center', marginTop: '2vw' }}><NavLink style={{ textDecoration: 'none' }} to='/ApplyPage' state={{ country: location.state.country, actType: location.state.actType, days: location.state.days }}><Button color='secondary' variant="contained" sx={{ textAlign: 'center' }}>Apply</Button></NavLink></div>
+        <div style={{ backgroundColor: 'white', width: '100vw', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: `url('https://wallpapercrafter.com/th800/217070-wallpaper-nature-wallpapers-nature-backgrounds-and.jpg')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+            <Box width='100%' minHeight='100vh' sx={{ bgcolor: 'rgba(255,255,255,.8)' }}>
+                <Typography marginTop='6.5vh' p='3%' fontSize='4vw' textAlign='center' fontWeight='large' color='secondary'>{`${location.state.actType} in ${location.state.country}`}</Typography>
+                <Box display='flex' width='100%' sx={{ flexDirection: { xs: 'column', sm: 'row' }, gap: { xs: '15vw' } }}>
+                    <Box sx={{ textAlign: { xs: 'center' }, marginLeft: { sm: '0.5vw', xs: '0' }, flexDirection: 'column', width: { sm: '50%', xs: '100%' } }}>
+                        <Typography sx={{ width: { xs: '90%' }, fontSize: { xs: '3vw', sm: '1.5vw' } }} textAlign='left' marginLeft='4%' marginRight='4%' marginTop='3.5%' color='secondary'>{text}</Typography>
+                        <div style={{ marginTop: '7vw', marginBottom: '3vw', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><RestaurantIcon color='secondary'></RestaurantIcon> <Typography sx={{ fontSize: { xs: '3vw', sm: '1.5vw' } }} color='secondary'>Food</Typography></div>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><HotelIcon color='secondary'></HotelIcon> <Typography sx={{ fontSize: { xs: '3vw', sm: '1.5vw' } }} color='secondary'>Housing</Typography></div>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}><LocalTaxiIcon color='secondary'></LocalTaxiIcon> <Typography sx={{ fontSize: { xs: '3vw', sm: '1.5vw' } }} color='secondary'>Airport Taxi</Typography></div>
+                            <NavLink style={{ textDecoration: 'none' }} to='/ApplyPage' state={{ country: location.state.country, actType: location.state.actType, days: location.state.days }}>
+                                <Button color='secondary' variant="contained" sx={{ textAlign: 'center' }}>Apply</Button>
+                            </NavLink>
+                        </div>
                     </Box>
-                    <ArrowForwardIosIcon sx={{ borderRadius: '50%', cursor: 'pointer' }} onClick={() => setSwipe(swipe - 1 <= 0 ? wildLifeImages.length - 1 : swipe - 1)}>-</ArrowForwardIosIcon>
+                    <Box sx={{ width: { sm: '60%', xs: '100%' }, marginTop: '0', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center' }}>
+                        <Box sx={{ width: { sm: '100%', xs: '100%' }, height: { sm: '80%', xs: '50vw' }}} display='flex' flexDirection='row' alignItems='center'>
+                            <ArrowBackIosIcon color='secondary' sx={{ borderRadius: '50%', cursor: 'pointer' }} onClick={() => setSwipe(swipe + 1 === arr.length ? 1 : swipe + 1)}>+</ArrowBackIosIcon>
+                            <Box sx={{ width: '100%', height: '92%', backgroundImage: `url(${arr[swipe]})`, backgroundSize: 'cover', borderRadius: '0.5vw' }}></Box>
+                            <ArrowForwardIosIcon color='secondary' sx={{ borderRadius: '50%', cursor: 'pointer', marginRight: '5%' }} onClick={() => setSwipe(swipe - 1 <= 0 ? wildLifeImages.length - 1 : swipe - 1)}>-</ArrowForwardIosIcon>
+                        </Box>
+                    </Box>
                 </Box>
             </Box>
-
-
         </div>
-
     );
 }
 
