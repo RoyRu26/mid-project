@@ -24,11 +24,4 @@ video{
     position:absolute;
     z-index: 1;
 }
-.ScrollingImgs{
-    position: absolute;
-    margin-top: 10vh;
-    top: 100%;
-    bottom: 0;
-    width: 100vw;
-    height: 20vh;
-}
+
