@@ -32,7 +32,7 @@ function NavBar() {
                             <SpaIcon color='secondary' size='large' />
                         </Box></NavLink>
                         <NavLink style={{ textDecoration: 'none' }} to='/GetStarted'><Typography fontWeight='medium' color='secondary'>Get Started</Typography></NavLink>
-                        <NavLink style={{ textDecoration: 'none' }} to='/'><Typography fontWeight='medium' color='secondary'>Home Page</Typography></NavLink>
+                        <NavLink style={{ textDecoration: 'none' }} to='/Gallery'><Typography fontWeight='medium' color='secondary'>Gallery</Typography></NavLink>
                     </Box>
                     <IconButton size='large' edge='start' color='secondary' onClick={() => setIsDrawerOpen(true)}><MenuIcon /></IconButton>
                 </StyledToolBar>
