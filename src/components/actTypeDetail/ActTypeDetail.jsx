@@ -124,7 +124,7 @@ function ActTypeDetail() {
                         <Box sx={{ width: { sm: '100%', xs: '100%' }, height: { sm: '80%', xs: '50vw' }}} display='flex' flexDirection='row' alignItems='center'>
                             <ArrowBackIosIcon color='secondary' sx={{ borderRadius: '50%', cursor: 'pointer' }} onClick={() => setSwipe(swipe + 1 === arr.length ? 1 : swipe + 1)}>+</ArrowBackIosIcon>
                             <Box sx={{ width: '100%', height: '92%', backgroundImage: `url(${arr[swipe]})`, backgroundSize: 'cover', borderRadius: '0.5vw' }}></Box>
-                            <ArrowForwardIosIcon color='secondary' sx={{ borderRadius: '50%', cursor: 'pointer', marginRight: '5%' }} onClick={() => setSwipe(swipe - 1 <= 0 ? wildLifeImages.length - 1 : swipe - 1)}>-</ArrowForwardIosIcon>
+                            <ArrowForwardIosIcon color='secondary' sx={{ borderRadius: '50%', cursor: 'pointer', marginRight:{xs: '0', sm: '5%'}}} onClick={() => setSwipe(swipe - 1 <= 0 ? wildLifeImages.length - 1 : swipe - 1)}>-</ArrowForwardIosIcon>
                         </Box>
                     </Box>
                 </Box>
